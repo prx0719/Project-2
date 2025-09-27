@@ -1,65 +1,27 @@
-#include <stdio.h>
+Prathmesh Zakane 
+CE2 
+PRN: B25CE1130
+ACTIVITY 2
 
-int main() {
-    int n1, n2,n3 ,n6=0, discount=0 , prize=0, n5=0,final, total;
-    
-    printf("                      Welcome to our shop EVERYDAY DRIP.\n\n");
-    
-    printf("Enter amount of your bill:");
-    scanf("%d", &n1);
-    if(n1>=5000)
-    { 
-        printf("You will get discount of 5% \n\n");
-        discount=discount+5;
-       prize=prize++;
-    }
-   
-    else
-    { 
-        printf("Sorry, you will not get discount \n\n");
-        
-    }
-     printf("---------------------------------------\n");
-    printf("How many times you have shopped from our shop?:");
-    scanf("%d", &n2);
-    if(n2>=2){ 
-        printf("You are eligible for Discount of 3% \n\n");
-      discount=discount+3;
-        
-    }
-  
-    else { printf("Sorry you will not get discount of this criteria.\n");
-        
-    }
-    printf("---------------------------------------\n");
-    printf("Do you follow us on instagram?\n if yes press 1\n if no press 0\n");
-    scanf("%d", &n3);
-    if(n3==1){ 
-        printf("You recieved 100 credits\ncredits can we withdrawn on next Bill\n Each credit is equal to 1rs \n");
-        
-    }
-    else { printf("You will not recieve any credits.\ncredits can we withdrawn on next Bill\nEach credit is equal to 1rs \n\n");
-   } 
-   
-   
-   printf( "------------------------------------\n");
-  printf("Your total discount is %d%\n", discount);
-  if(n1>=5000){
-      n5=5;
-  }
-  if (n2>=2){
-      n6=3;
-  }
-    final= n5+n6;
-    
+When the program is initiated, it prompts the user to enter their bill amount. Based on the input and additional user information, the program evaluates and applies various discounts and credits according to predefined conditions.
+Discount and Credit Criteria:
+Bill Amount Discount:
+ If the customer’s bill amount exceeds Rs. 5000, they are eligible for a flat discount of 5% on the total bill. This discount incentivizes higher spending by offering a significant reduction on large purchases.
+Loyalty Discount Based on Visit Frequency:
+ Customers who have visited the shop more than twice qualify for an additional 3% discount on their bill. This reward encourages repeat visits and fosters customer loyalty.
+Online Engagement Credits:
+ Customers who follow the shop online receive 200 credits as a reward. Each credit is equivalent to Rs. 1 and can be redeemed as a discount in future visits. This initiative promotes online engagement and builds a long-term relationship with customers.
+Process :
+The program collects the customer’s bill amount.
 
 
-total= n1 - (n1*final/100);
-  printf("Your total amount to pay is %d\n", total);
-   printf( "------------------------------------\n");
-   printf("Pay via card or cash\n");
-  printf("Visit us again !!");
-    return 0;
-}
-# Project-2
-Code
+It asks about the number of times the customer has visited the shop.
+
+
+It queries whether the customer follows the shop online.
+
+
+Based on these inputs, it calculates applicable discounts and credits.
+
+
+Finally, the program displays the total discount amount received by the customer, including any credits earned.
